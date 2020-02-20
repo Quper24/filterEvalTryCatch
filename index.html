@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Фильтрация данных по типу</title>
+	<script src="js/script.js" defer></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	<div class="main-container">
+		<div class="dialog__container">
+			<h1 class="dialog__heading">Фильтрация данных по типу</h1>
+			<form class="filter-form">
+				<div class="filter-form__input-wrapper">
+					<label class="filter-form__label" for="type">Тип данных</label>
+					<select class="filter-form__input" id="type">
+						<option value="number">Number</option>
+						<option value="string">String</option>
+						<option value="boolean">Boolean</option>
+					</select>
+				</div>
+				<div class="filter-form__input-wrapper">
+					<label class="filter-form__label" for="data">Данные</label>
+					<input class="filter-form__input" type="text" id="data" required>
+				</div>
+				<div class="filter-form__input-wrapper filter-form__input-wrapper_button">
+					<button id='filter-btn' class="filter-form__button" type="submit">Фильтровать</button>
+				</div>
+			</form>
+			<h2 class="dialog__subheading">Результаты:</h2>
+
+			<div class="dialog__response-block dialog__response-block_no-results">
+				<p class="dialog__msg dialog__msg_no-results">Пока что нечего показать.</p>
+			</div>
+
+			<div class="dialog__response-block dialog__response-block_ok" style="display: none;">
+				<p class="dialog__p">
+					<span class="dialog__msg-wrapper">
+						<i class="far fa-check-circle dialog__msg-icon"></i>
+						<span class="dialog__msg dialog__ok-msg">Вот что получилось: </span>
+					</span>
+					<span id="ok" class="dialog__results"></span>
+				</p>
+			</div>
+
+			<div class="dialog__response-block dialog__response-block_error" style="display: none;">
+				<p class="dialog__p">
+					<span class="dialog__msg-wrapper">
+						<i class="far fa-times-circle dialog__msg-icon"></i>
+						<span class="dialog__msg dialog__ok-msg">Что-то пошло нетак: </span>
+					</span>
+					<span id="error" class="dialog__results"></span>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

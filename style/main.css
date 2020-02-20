@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-image: url('../img/mountains.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-container{
+  display: flex;
+  vertical-align: middle;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.dialog__container{
+  width: 39em;
+  z-index: 2;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.85);
+  color: rgba(0,0,0,0.8);
+  box-shadow: 0 0 4px 1px rgba(105,105,105, 0.6);
+  padding: 0 18px 18px 18px;
+  color: #767676;
+}
+.dialog__heading{
+  padding: 26px 0;
+  font-size: 22px;
+  text-align: center;
+  color: rgba(34,123,178, 0.8);
+  margin: 0;
+}
+.dialog__subheading{
+  margin: 20px 0 4px 0;
+  color: #767676;
+  font-size: 16px;
+  font-weight: normal;
+}
+.dialog__heading-icon{
+  font-size: 21px;
+  margin-right: 7px;
+}
+.dialog__response-block{
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 5em;
+  font-size: 15px;
+  padding: 10px 10px 10px 10px;
+}
+.dialog__response-block_no-results{
+  border: 1px dashed dimgray;
+}
+.dialog__response-block_ok{
+  background-color: #d0e5c6;
+  color: #649f48;
+}
+.dialog__response-block_error{
+  background-color: rgba(192,0,28,0.3);
+  color: rgba(192,0,28,1);
+}
+.dialog__msg-wrapper{
+  display: inline-flex;
+  width: 100%;
+}
+.dialog__msg{
+  line-height: 28px;
+  padding-left: 5px;
+  font-weight: 600;
+  height: 28px;
+}
+.dialog__msg_ok{
+
+}
+.dialog__msg_no-results{
+  margin: 0;
+}
+.dialog__msg-icon{
+  font-size: 28px;
+  height: 28px;
+}
+.dialog__msg-icon_ok{
+  color: #8dc075;
+}
+.dialog__p{
+  margin: 0;
+  line-height: 28px;
+}
+.dialog__results{
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+}
+.filter-form{
+  display: flex;
+  flex-direction: row;
+}
+.filter-form__label{
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.filter-form__input{
+  box-sizing: border-box;
+  width: 200px;
+  background-color: transparent;
+  height: 30px;
+  border-radius: 3px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid darkgray;
+  padding: 0 0 0 0.5em;
+  display: block;
+}
+.filter-form__button{
+  height: 30px;
+  width: 200px;
+  border: rgba(34,123,178, 0.8);
+  border-radius: 3px;
+  background-color: rgba(34,123,178, 0.8);
+  color: white;
+  cursor: pointer;
+}
+.filter-form__button:hover{
+  background-color: rgba(34,123,178, 1);
+}
+.filter-form__input-wrapper{
+  margin-right: 12px;
+}
+.filter-form__input-wrapper_button{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 0;
+}
